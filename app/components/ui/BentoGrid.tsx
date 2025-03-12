@@ -481,37 +481,24 @@ export const BentoGridItem = ({
                 )}
 
                 <div className={cn(titleClassName, "relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10")}>
-                    <div className="font-sans font-extralight md:max-w-32 md:text-xs max-w-100 lg:text-base text-sm text-[#C1C2D3] z-20">
+                    <div className="font-sans font-extralight md:max-w-60 md:text-xs max-w-100 lg:text-base text-sm text-[#C1C2D3] z-20">
                         {description}
                     </div>
-                    <div className="font-sans text-lg lg:text-3xl text-white max-w-100 font-bold z-40">{title}</div>
+                    <div className="font-sans text-lg lg:text-3xl  text-white max-w-100 font-bold z-40">{title}</div>
 
                     {id === 2 && <GlobeDemo />}
 
                     {/* Tech stack list div */}
                     {id === 3 && (
                         <div className="flex flex-wrap justify-center gap-2 lg:gap-4 mt-4 ">
-                            {/* First Tech Stack List */}
+                            {/*  Tech Stack List */}
                             <div className="flex flex-wrap gap-2 md:gap-3 lg:gap-4 text-white">
-                                {["React.js", "Next.js", "Typescript", "Node.js"].map((item) => (
+                                {["React.js", "Next.js", "Typescript", "MongoDB", "Bootstrap", "MySQL", "Firebase"].map((item) => (
                                     <span
                                         key={item}
                                         className="lg:py-3 lg:px-4 py-2 px-3 text-xs lg:text-sm opacity-50 lg:opacity-100 
                                                    rounded-md text-center bg-[#10132E] w-auto"
                                     >
-                                        {item}
-                                    </span>
-                                ))}
-                            </div>
-
-                            {/* Second Tech Stack List */}
-                            <div className="flex flex-wrap gap-2 md:gap-3 lg:gap-4 text-white">
-                                {["Vue.js", "Node.js", "Tailwind.css", "SQL"].map((item) => (
-                                    <span
-                                        key={item}
-                                        className="flex items-center justify-center w-[110px] h-[40px] px-2 py-2 
-                   bg-[#10132E] text-white text-sm font-medium 
-                   rounded-md text-center truncate">
                                         {item}
                                     </span>
                                 ))}

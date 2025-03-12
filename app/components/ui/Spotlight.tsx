@@ -13,10 +13,10 @@ export const Spotlight: React.FC<SpotlightProps> = ({ className, fill = "white" 
   return (
     <div
       className={clsx(
-        "absolute rounded-full blur-[150px] opacity-80 mix-blend-lighten z-0",
+        "w- screen absolute rounded-full blur-[150px] opacity-80 mix-blend-lighten z-1 bg-[#13162d]",
         className
       )}
-      style={{ backgroundColor: fill, width: "400px", height: "400px" }}
+      style={{ backgroundColor: fill, width: "900px", height: "400px" }}
     />
   );
 };

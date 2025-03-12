@@ -81,22 +81,21 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 const Hero = () => {
   return (
     // <div className="w-screen  relative pb-20 pt-36 bg-black">
-    <div className="w-screen  relative pb-10 pt-20 bg-black">
+    <div className="w-screen relative overflow-hidden pb-10 pt-20 bg-[#13162d]">
 
       {/* Ensure Spotlights are inside a relative parent */}
-      <div className="absolute  inset-0 overflow-hidden pointer-events-none">
-        <Spotlight className="top-10 left-10" fill="magenta" />
+      <div className="absolute  inset-0 w-screen overflow-hidden pointer-events-none">
+        <Spotlight className="top-10 left-10" fill="black" />
         <Spotlight className="top-20 right-20" fill="purple" />
-        <Spotlight className="bottom-10 left-40" fill="blue" />
+        <Spotlight className="bottom-10 left-40" fill="black" />
+        
       </div>
 
       <div
         className="h-screen w-full flex items-center justify-center relative z-10">
 
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Dynamic Web Magic with Next.js
-          </p>
+          
 
           <TextGenerateEffect
             words="Transforming Concepts into Seamless User Experiences"
@@ -104,7 +103,7 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl text-white">
-            Hi! I&apos;m Pamela, a Next.js Developer based in Kenya.
+            Hi! I&apos;m Pamela, a Frontend Developer based in Kenya.
           </p>
 
           <a href="#about">
