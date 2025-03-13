@@ -7,7 +7,7 @@ import RecentProjects from "./components/RecentProjects";
 import { navItems } from "@/data";
 import Clients from "./components/Clients";
 import Experience from "./components/ui/Experience";
-import Approach from "./components/Approach";
+import Approach from "@/app/components/Approach";
 import Footer from "./components/Footer";
 
 
@@ -30,4 +30,4 @@ export default function Home() {
     </main>
 
   );
-}
+};

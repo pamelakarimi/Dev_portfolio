@@ -391,7 +391,7 @@
 
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
-import Lottie from "react-lottie";
+import Lottie from "lottie-react";
 
 import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./GradientBg";
@@ -438,13 +438,6 @@ export const BentoGridItem = ({
     spareImg?: string;
 }) => {
     const [copied, setCopied] = useState(false);
-
-    const defaultOptions = {
-        loop: copied,
-        autoplay: copied,
-        animationData: animationData,
-        rendererSettings: { preserveAspectRatio: "xMidYMid slice" },
-    };
 
     const handleCopy = () => {
         navigator.clipboard.writeText("karimidevv");
@@ -509,7 +502,7 @@ export const BentoGridItem = ({
                     {id === 6 && (
                         <div className="mt-5 relative">
                             <div className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"}`}>
-                                <Lottie options={defaultOptions} height={200} width={400} />
+                                <Lottie animationData={animationData} loop={copied} autoplay={copied} style={{ height: 200, width: 400 }} />
                             </div>
 
                             <MagicButton
