@@ -74,7 +74,7 @@ export const projects = [
     id: 1,
     title: "Jipamba",
     des: "Jipamba is a beauticare digitization startup connecting customers with beauty professionals through seamless online booking, service discovery, and digital payments.",
-    img: "/p1.svg",
+    img: "/jipamba.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/fm.svg"],
     link: "https://jipamba.com",
   },

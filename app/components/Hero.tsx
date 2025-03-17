@@ -77,18 +77,19 @@ import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import { FaDownload } from "react-icons/fa";
 
 const Hero = () => {
   return (
     // <div className="w-screen  relative pb-20 pt-36 bg-black">
-    <div className="w-screen relative overflow-hidden pb-10 pt-20 bg-[#13162d]">
+    <div className="w-screen relative overflow-hidden pb-10 pt-1 bg-[#13162d]">
 
       {/* Ensure Spotlights are inside a relative parent */}
       <div className="absolute  inset-0 w-screen overflow-hidden pointer-events-none">
         <Spotlight className="top-10 left-10" fill="black" />
         <Spotlight className="top-20 right-20" fill="purple" />
         <Spotlight className="bottom-10 left-40" fill="black" />
-        
+
       </div>
 
       <div
@@ -96,7 +97,6 @@ const Hero = () => {
 
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           
-
           <TextGenerateEffect
             words="Transforming Concepts into Seamless User Experiences"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
@@ -105,14 +105,23 @@ const Hero = () => {
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl text-white">
             Hi! I&apos;m Pamela, a Frontend Developer based in Kenya.
           </p>
+          <div className="flex flex-col md:flex-row gap-4">
+            <a href="#about">
+              <MagicButton
+                title="Show my work"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
+            <a href="/cv.pdf" download>
+              <MagicButton
+                title="Download My Resume"
+                icon={<FaDownload />}
+                position="right"
+              />
 
-          <a href="#about">
-            <MagicButton
-              title="Show my work"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+            </a>
+          </div>
         </div>
       </div>
     </div>
